@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+*{
+    font-family: "Readux Pro",sans-serif ;
+    
+}
+
+
+body{
+   text-align: center;
+    
+}
+
+
+
+
+
+.primary-button{
+    color:#ffff;
+    
+    font-size: 20px;
+    background:linear-gradient(45deg,rgba(254,48,114),rgba(255,89,64));
+    padding:12px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.primary-button:hover{
+    background:linear-gradient(260deg,rgba(254,48,114),rgba(255,89,64));
+}
+
+/*-------------------------Navbar--------------------------------*/
+
+
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:15px;
+    border-top:5px solid black;
+
+}
+
+.logo-container{
+    width: 200px;
+    margin-left:15px;
+    cursor: pointer;
+}
+
+.logo-container .logo{
+    width: 100%;
+    height: 100%;
+}
+
+nav .nav-button{
+    margin:10px;
+    color:rgba(254,48,114);
+    background: rgb(255,255,255);
+    padding:10px 20px; 
+    font-size:20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+nav .nav-button:disabled{
+    background-color: rgb(180,181,180);
+    color: rgb(192,32,68);
+}
+/*--------------------home-----------------------------*/
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0) 100%
+    ), url('images/6e9794bcedeecf5a8f8f41338a2a7345.webp')
+  
+}
+
+
+.home{
+    margin-top: 35vh;
+}
+.primary-title{
+    font-size: 6.5rem;
+    color:rgb(255,255,255)
+    
+}
+
+
+/*---------------AuthModal----------------------------*/
+
+.auth-modal{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.secondary-button{
+    color:rgb(150,150,150);
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 90%;
+    padding:10px 20px;
+    
+    border: 1px solid rgb(180,181,180);
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.error-display{
+    color:red;
+}
+
+.auth-modal input[type="email"],
+.auth-modal input[type="password"]{
+    padding:10px 10px;
+    width: 80%;
+    margin-top:20px;
+   
+    font-size: 20px;
+}
+/*---------------Oneboarding----------------------------*/
+
+.Oneboarding{
+    border-top: 2px solid rgb(215, 214, 214);
+}
+.Oneboarding form{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.Oneboarding form section{
+    display: flex;
+    flex-direction: column;
+    padding:10px 28px;
+    width: 35%;
+    text-align: left;
+    
+}
+.Oneboarding form section input{
+    padding:15px 30px;
+    margin:10px 0;
+    font-size: 15px ;
+    border:solid 2px rgb(219,219,219);
+    border-radius: 10px;
+    
+}
+
+.Oneboarding form section label{
+    margin-top:10px;
+    font-size: 600;
+    font-size: 20px;
+}
+
+
+
+.Oneboarding form section label{
+    margin:10px 0;
+}
+
+.Oneboarding form section .multiple-input-container{
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+}
+.Oneboarding form section .multiple-input-container input[type="number"]::-webkit-outer-spin-button,
+.Oneboarding form section .multiple-input-container input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Oneboarding form section .multiple-input-container input[type="number"] {
+    -moz-appearance:textfield;
+    max-width: 100px;
+    width: 100%;
+}
+
+
+.Oneboarding form section .multiple-input-container input{
+  
+    margin-right: 10px;
+}
+
+.Oneboarding form section .multiple-input-container label{
+    padding:10px;
+    border:solid 2px rgb(144,144,144);
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-right:10px;
+}
+
+.Oneboarding form   input[type="radio"]{
+    display: none;
+}
+
+
+
+.Oneboarding form   input[type="radio"]:checked + label{
+    border:solid 2px rgb(192,32,68);
+}
+
+.Oneboarding form   input[type="submit"]{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Oneboarding form   input[type="submit"]:hover{
+    background:rgb(192,32,68);
+    color:#ffff;
+
+}
+.Oneboarding form   input[type="submit"]:active{
+    background:rgb(266,155,155)
+
+}
+
+.Oneboarding form  .photo-container{
+    width: 600px;
+    height: 600px;
+}
+
+.Oneboarding form  .photo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------Dashboard-----------------*/
+.Dashboard{
+    display: flex;    
+    justify-content: space-between;
+}
+
+
+.Dashboard .swipe-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+  
+  .card-container {
+    width: 400px;
+    height: 650px;
+  }
+  .swipe {
+    position: absolute;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+  
+  
+  
+.card h3 {
+  margin-top: 10px;
+}
+  
+
+.last-direct{
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    padding:10px;
+}
+
+/*------------chat-------------------*/
+
+.chat-Container{
+    z-index: 1;
+    border-right:2px solid rgb(180,181,180)
+}
+
+
+.chat-container-header{
+    height:8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg,rgba(254,48,114),rgba(255,89,64));
+}
+
+.chat-container-header .profile{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+
+.chat-container-header .profile .img-container{
+    width: 50px;
+    height: 50px;
+    margin-left:10px;
+}
+
+
+
+.chat-container-header .profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat-container-header .profile  h3{
+    color:#fff;
+}
+
+.chat-Container .option-btn{
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    gap:5px
+}
+
+.chat-Container .option-btn button{
+    width: 50%;
+    padding:10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+    background: transparent;
+    border:none;
+    border-bottom: 5px solid rgb(192,32,68) ;
+    border-radius: 2px;
+}
+
+
+
+.chat-Container .option-btn button:disabled{
+    border-bottom-color: rgb(180,181,180);
+    color:rgb(180,181,180);
+}
+
+/*------------chatDisplay-------------------*/
+
+
+.chat-display{
+    padding:20px;
+    height: 55vh;
+    overflow-y:auto ;
+}
+/*------------ChatInput-------------------*/
+.chat-input{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input .secondary-button{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/*------------ChatInput-------------------*/
+.matchDiplay{
+    display: flex;
+    flex-direction: column;
+}
+
+.matchDiplay .match-card{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.matchDiplay .match-card:hover{
+
+    background: rgb(211, 212, 211);
+    
+}
+
+.matchDiplay .match-card .img-container{
+    width: 30px;
+    height: 30px;
+    margin-left:20px;
+}
+
+
+.match-card .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+/*------------ChatDisplay-------------------*/
+.chat-display{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.chat-display .chat-message-header{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.chat-display .chat-message-header .img-container{
+    width: 30px;
+    height: 30px;
+   
+}
+.chat-message-header .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.chat-message-header p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.chat-message-header p{
+    margin-left: -2px;
+}
